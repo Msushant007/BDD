@@ -1,0 +1,70 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 5, Errors: 0, Skipped: 0, Time elapsed: 29.356 s <<< FAILURE! - in TestSuite
+runScenario(runner.TestRunner)  Time elapsed: 19.302 s  <<< FAILURE!
+io.cucumber.testng.UndefinedStepException: 
+The step 'I have entered invalid "abcccced" and "validPassword"' and 1 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("I have entered invalid {string} and {string}")
+public void i_have_entered_invalid_and(String string, String string2) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("I should seen a error message indicating {string}")
+public void i_should_seen_a_error_message_indicating(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+runScenario(runner.TestRunner)  Time elapsed: 19.315 s  <<< FAILURE!
+io.cucumber.testng.UndefinedStepException: 
+The step 'I have entered invalid "invalid@email.com" and "invalidPassword"' and 1 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("I have entered invalid {string} and {string}")
+public void i_have_entered_invalid_and(String string, String string2) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("I should seen a error message indicating {string}")
+public void i_should_seen_a_error_message_indicating(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+runScenario(runner.TestRunner)  Time elapsed: 20.039 s  <<< FAILURE!
+io.cucumber.testng.UndefinedStepException: 
+The step 'I have entered invalid "valid@email.com" and "abcccced"' and 1 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("I have entered invalid {string} and {string}")
+public void i_have_entered_invalid_and(String string, String string2) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("I should seen a error message indicating {string}")
+public void i_should_seen_a_error_message_indicating(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+runScenario(runner.TestRunner)  Time elapsed: 20.675 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"link text","selector":"Logout"}
+  (Session info: chrome=112.0.5615.137)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.0.1', java.version: '1.8.0_321'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f2cd73d3f39de90aa37a86bf7cd00400, findElement {using=link text, value=Logout}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.137, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: /var/folders/l6/sv4hv45n0w7...}, goog:chromeOptions: {debuggerAddress: localhost:54644}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:54644/devtoo..., se:cdpVersion: 112.0.5615.137, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f2cd73d3f39de90aa37a86bf7cd00400
+
+runScenario(runner.TestRunner)  Time elapsed: 22.864 s  <<< FAILURE!
+java.lang.AssertionError: expected [https://naveenautomationlabs.com/opencart/index.php?route=account/login] but found [https://naveenautomationlabs.com/opencart/index.php?route=account/forgotten]
+
