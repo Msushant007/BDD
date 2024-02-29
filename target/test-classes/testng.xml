@@ -3,6 +3,7 @@
     <test name="Cucumber Login Test">
         <classes>
             <class name="runner.TestRunner"></class>
+            <class name="org.example.stepdefs.Steps"></class>
         </classes>
     </test>
 </suite>
